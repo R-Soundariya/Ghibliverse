@@ -89,14 +89,18 @@ no copyrighted Ghibli character art.
 
 1. Collected and cleaned real data on every Ghibli film — budget, box office,
    ratings, awards, genres.
-2. Built a backend (an API) that serves that data and crunches the numbers.
-3. Built a frontend (the website) with a welcome page, a movie browser, and two
-   dashboards.
-4. Fetched real movie posters from a free movie database and wired them into
+2. Built a backend (an API) that serves that data to the website.
+3. Built the dashboards — wrote the logic that turns raw numbers into
+   insights (averages, ROI ratios, director-by-director stats, and the
+   statistical correlations behind what predicts success), then designed
+   charts, KPI tiles, and a sortable comparison table to actually show it.
+4. Built the rest of the frontend — a welcome page and a searchable, filterable
+   movie browser to go alongside the dashboards.
+5. Fetched real movie posters from a free movie database and wired them into
    the site.
-5. Added a little hand-drawn forest spirit to the welcome page as an original
+6. Added a little hand-drawn forest spirit to the welcome page as an original
    touch.
-6. Put the whole thing on the internet — the website on Vercel, the backend +
+7. Put the whole thing on the internet — the website on Vercel, the backend +
    database on Railway — so anyone can open the link and use it, no setup
    required.
 
