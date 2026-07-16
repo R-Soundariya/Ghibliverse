@@ -8,7 +8,7 @@ business intelligence, data science, and immersive web storytelling.
 
 This is the **foundation + first vertical slice**: Landing → Movie Explorer →
 Analytics Dashboard → Executive Dashboard, wired end-to-end to a real seeded
-dataset. See [Roadmap](#roadmap) for what's designed-for but not yet built.
+dataset.
 
 ## Screenshots
 
@@ -118,25 +118,3 @@ Seeded from a static, hand-cleaned CSV of the Studio Ghibli theatrical catalog
 (title, director, runtime, ratings, box office, budget, genres, awards). Box
 office/budget/awards figures are approximate, compiled from public sources for
 demonstration purposes — see `data/README.md`.
-
-## Roadmap
-
-This slice deliberately covers only Landing → Explorer → Dashboard. The
-architecture is designed to grow into the fuller GhibliVerse vision without
-rework:
-
-- 🤖 AI Movie Assistant (RAG chat, using OpenAI or Gemini — both available)
-- 🔍 Semantic search ("show me movies about healing")
-- 💬 Review summarization & audience sentiment analysis
-- 🎭 Character analytics (screen time, sentiment, relationship graphs)
-- 🌎 Global popularity map & streaming availability
-- 📅 Interactive release timeline
-- 🎵 Music/composer analytics
-- 🌿 Computer-vision "nature score" frame analysis
-- 🎨 Color palette extraction per film
-- ☁️ Original Ghibli-inspired scene generator
-- 📄 PDF export, favorites, achievement badges
-
-Each is architecturally possible today (the chart token system already supports
-theming, the API is easy to extend, the data model has room to grow) but
-intentionally not implemented yet.
