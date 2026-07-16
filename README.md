@@ -1,5 +1,8 @@
 # 🌿 GhibliVerse
 
+**Live demo:** https://ghibliverse-one.vercel.app
+**API:** https://ghibliverse-api-production.up.railway.app
+
 An AI-powered Studio Ghibli analytics platform — a portfolio project combining
 business intelligence, data science, and immersive web storytelling.
 
@@ -25,16 +28,19 @@ stars, moon, tree-canopy silhouette. The choice persists across visits
 ## Architecture
 
 ```
-Next.js (Vercel)  ──HTTP──>  FastAPI (Render/Railway)  ──SQL──>  Supabase Postgres
+Next.js (Vercel)  ──HTTP──>  FastAPI (Railway)  ──SQL──>  Postgres (Railway)
      │                              │
      └── Framer Motion, Recharts    └── SQLAlchemy, Pydantic
 ```
 
 - **Frontend** (`frontend/`) — Next.js 14 App Router, TypeScript, Tailwind CSS,
-  Framer Motion for ambient/hover animation, Recharts for the dashboard.
+  Framer Motion for ambient/hover animation, Recharts for the dashboard. Deployed
+  on Vercel.
 - **Backend** (`backend/`) — FastAPI, SQLAlchemy 2.0, read-only REST API over
-  movies + analytics aggregates.
-- **Database** — Supabase (hosted Postgres). Schema + seed pipeline in `data/`.
+  movies + analytics aggregates. Deployed on Railway.
+- **Database** — Postgres (Railway-hosted in this deployment; the schema/seed
+  pipeline in `data/` works against any Postgres, Supabase included — see
+  `SUPABASE_DB_URL` in the env files).
 
 Movie posters are fetched from the [OMDb API](https://www.omdbapi.com/)
 (IMDb-sourced data, attributed in the site footer), falling back to an original
@@ -49,7 +55,7 @@ no copyrighted Ghibli character art.
 |---|---|
 | Frontend | Next.js, TypeScript, Tailwind CSS, Framer Motion, Recharts |
 | Backend | FastAPI, SQLAlchemy, Pydantic |
-| Database | Supabase (Postgres) |
+| Database | Postgres (Railway) |
 | Data | Pandas (cleaning), SQL |
 | Testing | Vitest + React Testing Library, Pytest |
 
@@ -96,10 +102,15 @@ type checking.
 
 ## Deployment
 
-- **Frontend** → Vercel (root: `frontend/`, env: `NEXT_PUBLIC_API_URL`)
-- **Backend** → Render or Railway (root: `backend/`, env: `SUPABASE_DB_URL`,
-  `FRONTEND_ORIGIN`)
-- **Database** → Supabase (already hosted)
+Live at https://ghibliverse-one.vercel.app, backed by
+https://ghibliverse-api-production.up.railway.app.
+
+- **Frontend** → Vercel (root: `frontend/`, env: `NEXT_PUBLIC_API_URL`, framework
+  pinned via `frontend/vercel.json`)
+- **Backend** → Railway (root: `backend/`, env: `SUPABASE_DB_URL`,
+  `FRONTEND_ORIGIN`; start command from `backend/Procfile`)
+- **Database** → Railway Postgres (works with any Postgres, e.g. Supabase, via
+  the same `SUPABASE_DB_URL`)
 
 ## Data attribution
 
