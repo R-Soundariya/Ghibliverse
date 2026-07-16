@@ -90,10 +90,11 @@ no copyrighted Ghibli character art.
 1. Collected and cleaned real data on every Ghibli film — budget, box office,
    ratings, awards, genres.
 2. Built a backend (an API) that serves that data to the website.
-3. Built the dashboards — wrote the logic that turns raw numbers into
-   insights (averages, ROI ratios, director-by-director stats, and the
-   statistical correlations behind what predicts success), then designed
-   charts, KPI tiles, and a sortable comparison table to actually show it.
+3. Built the dashboards — cleaned and merged the source data with **Pandas**,
+   then wrote the live statistics (averages, ROI ratios, director-by-director
+   stats, and Pearson correlations behind what predicts success) in plain
+   **Python** on the backend, and rendered it all as interactive charts, KPI
+   tiles, and a sortable comparison table with **Recharts** on the frontend.
 4. Built the rest of the frontend — a welcome page and a searchable, filterable
    movie browser to go alongside the dashboards.
 5. Fetched real movie posters from a free movie database and wired them into
