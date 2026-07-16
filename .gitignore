@@ -1,0 +1,43 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+frontend/.env.local
+frontend/.env*.local
+npm-debug.log*
+.pnpm-debug.log*
+*.tsbuildinfo
+
+# Python / FastAPI
+__pycache__/
+*.pyc
+.venv/
+venv/
+backend/.env
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Local dev database (used to demo without live Supabase credentials)
+data/smoke.db
+data/.env
+
+# Env files
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Testing / coverage
+coverage/
+htmlcov/
+.coverage
+
+# Misc
+*.log

@@ -1,0 +1,23 @@
+title,budget_usd,box_office_usd,awards_count,imdb_rating,genres
+Castle in the Sky,4000000,20000000,0,7.9,Fantasy;Adventure
+Grave of the Fireflies,4500000,12000000,3,8.5,War;Drama
+My Neighbor Totoro,5000000,41000000,2,8.1,Fantasy;Family
+Kiki's Delivery Service,7000000,47000000,1,7.8,Fantasy;Coming-of-Age
+Only Yesterday,8000000,27000000,1,7.9,Drama;Slice of Life
+Porco Rosso,10000000,94000000,1,7.7,Adventure;Fantasy
+Pom Poko,12000000,55000000,1,7.4,Fantasy;Comedy
+Whisper of the Heart,9000000,20000000,0,7.8,Romance;Coming-of-Age
+Princess Mononoke,23500000,169000000,4,8.4,Fantasy;Adventure;War
+My Neighbors the Yamadas,12000000,8000000,0,7.1,Comedy;Slice of Life
+Spirited Away,19000000,395000000,7,8.6,Fantasy;Adventure;Coming-of-Age
+The Cat Returns,15000000,42000000,0,7.4,Fantasy;Adventure
+Howl's Moving Castle,24000000,236000000,2,8.2,Fantasy;Romance;War
+Tales from Earthsea,20000000,75000000,0,6.0,Fantasy;Adventure
+Ponyo,34000000,204000000,2,7.7,Fantasy;Family
+Arrietty,20000000,145000000,2,7.6,Fantasy;Family
+From Up on Poppy Hill,20000000,61000000,1,7.5,Drama;Romance;Historical
+The Wind Rises,30000000,136000000,2,7.8,Drama;Historical;War
+The Tale of the Princess Kaguya,49300000,25000000,3,8.0,Fantasy;Drama;Historical
+When Marnie Was There,20000000,34000000,0,7.7,Drama;Mystery
+Earwig and the Witch,10000000,1000000,0,5.0,Fantasy;Comedy
+The Boy and the Heron,30000000,167000000,4,7.6,Fantasy;Coming-of-Age
