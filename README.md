@@ -3,12 +3,38 @@
 **Live demo:** https://ghibliverse-one.vercel.app
 **API:** https://ghibliverse-api-production.up.railway.app
 
-An AI-powered Studio Ghibli analytics platform — a portfolio project combining
+An end-to-end Studio Ghibli analytics platform — a portfolio project combining
 business intelligence, data science, and immersive web storytelling.
 
-This is the **foundation + first vertical slice**: Landing → Movie Explorer →
-Analytics Dashboard → Executive Dashboard, wired end-to-end to a real seeded
-dataset.
+## Why Studio Ghibli?
+
+Studio Ghibli is one of the most beloved animation studios in the world —
+founded in 1985 by Hayao Miyazaki and Isao Takahata, it's the studio behind
+*Spirited Away* (the only hand-drawn animated film to win the Oscar for Best
+Animated Feature), *My Neighbor Totoro*, *Princess Mononoke*, and more. It's
+famous for hand-drawn artistry, deeply human stories, and a signature love of
+nature — themes this project tries to reflect visually, not just describe.
+
+## What it does
+
+Explore all 22 Ghibli films, then dig into the data three different ways:
+
+- **Movie Explorer** — search, filter, and browse every film with real posters.
+- **Analytics Dashboard** — ratings, box office, and genre trends across the
+  catalog.
+- **Executive Dashboard** — the deep one: which directors' films perform best,
+  which movies had the best return on investment, and statistical correlations
+  that reveal what actually predicts success (e.g. awards won correlates
+  strongly with box office — r = 0.77 — while budget barely predicts a film's
+  rating).
+
+## How the dashboard actually works
+
+Every chart and number is computed live from a real database, not hardcoded.
+When you load the Executive Dashboard, the backend pulls all 22 films, does the
+math (averages, ROI ratios, correlation coefficients) on the spot, and sends
+back the results — so the "insights" are genuinely derived from the data each
+time, not pre-written.
 
 ## Screenshots
 
@@ -58,6 +84,21 @@ no copyrighted Ghibli character art.
 | Database | Postgres (Railway) |
 | Data | Pandas (cleaning), SQL |
 | Testing | Vitest + React Testing Library, Pytest |
+
+## How it was built (in plain English)
+
+1. Collected and cleaned real data on every Ghibli film — budget, box office,
+   ratings, awards, genres.
+2. Built a backend (an API) that serves that data and crunches the numbers.
+3. Built a frontend (the website) with a welcome page, a movie browser, and two
+   dashboards.
+4. Fetched real movie posters from a free movie database and wired them into
+   the site.
+5. Added a little hand-drawn forest spirit to the welcome page as an original
+   touch.
+6. Put the whole thing on the internet — the website on Vercel, the backend +
+   database on Railway — so anyone can open the link and use it, no setup
+   required.
 
 ## Local setup
 
@@ -118,3 +159,8 @@ Seeded from a static, hand-cleaned CSV of the Studio Ghibli theatrical catalog
 (title, director, runtime, ratings, box office, budget, genres, awards). Box
 office/budget/awards figures are approximate, compiled from public sources for
 demonstration purposes — see `data/README.md`.
+
+---
+
+🏷️ #LetsMeetInTheGhibliForest #GhibliVerse #StudioGhibli #DataMeetsMagic
+#ForestSpiritAndDashboards #NextJS #FastAPI #DataViz #BuildInPublic
